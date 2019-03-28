@@ -1,5 +1,5 @@
 let main = document.getElementsByTagName('main')[0];
-let crap = JSON.parse(JaySon);
+let myData = JSON.parse(JaySon);
 let myArray = [];
 
 const domBuilder = (parent, child) =>{
@@ -35,8 +35,8 @@ const domBuilder = (parent, child) =>{
     }
 }
 
-crap.forEach(item=>{
-    //Cycle thorough crap and send objects to domBuilder;
+myData.forEach(item=>{
+    //Cycle thorough myData and send objects to domBuilder;
     let myDOM = document.getElementsByTagName('main')[0];
     domBuilder(myDOM, item);
 })
