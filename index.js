@@ -66,21 +66,10 @@ const updateText = () => {
     }
 }
 
-// const codePOS = () => {
-//     let myCode = document.getElementsByTagName("main")[0];
-//     let topMar = (window.innerHeight - myCode.offsetHeight)/2;
-//     let leftMar = (window.innerWidth - myCode.offsetWidth)/2;
-//     myCode.style.top = topMar + 'px';
-//     myCode.style.left = leftMar + 'px';
-// }
-
 let typing = setInterval(function(){
     if(myArray.length == 0){
         clearInterval(typing);
     } else {
         updateText();
     }
-},10)
-
-//codePOS();
-//window.addEventListener("resize", codePOS);
+},50)
